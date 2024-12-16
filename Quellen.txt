@@ -1,0 +1,6 @@
+Drop Down: https://www.w3schools.com/tags/tag_select.asp
+
+Text Eingabe: https://www.w3schools.com/tags/tag_input.asp
+
+Placeholder Eingabe Feld: https://www.mediaevent.de/html/input.html
+
