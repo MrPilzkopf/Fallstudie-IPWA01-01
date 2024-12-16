@@ -5,12 +5,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KleiDo</title>
-        <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="styles.css">
     </head>
 
 
     <body>
-        <header>
+        <header class="Global-header">
             <nav>
                 <img src="Kleido_Logo.png" alt="Logo" class="logo">
                 <ul>
@@ -23,63 +23,64 @@
         </header>
 
         <main>
-            <p>Danke das du Spenden möchtest.</p>
-            <p>Fülle bitte die das untere Formular aus.</p>
-            <p> </p>
-            <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
-                ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
-            <form>
-                <select name="spendeformular" id="spendeformular">
-                    <option value="geschäftsstelle">Geschäftsstelle</option>
-                    <option value="sammelfahrzeug">Sammelfahrzeug</option>
-                </select>
-                <br><br>
+            <div class="Spenden-Formular">
+                <p>Danke das du Spenden möchtest.</p>
+                <p>Fülle bitte die das untere Formular aus.</p>
+                <p> </p>
+                <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
+                    ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
+                <form>
+                    <select name="spendeformular" id="spendeformular">
+                        <option value="geschäftsstelle">Geschäftsstelle</option>
+                        <option value="sammelfahrzeug">Sammelfahrzeug</option>
+                    </select>
+                    <br><br>
 
-                <label for="vorname">Vorname:</label>
-                <input type="text" id="vorname" name="vorname" placeholder="Vorname">
+                    <label for="vorname">Vorname:</label>
+                    <input type="text" id="vorname" name="vorname" placeholder="Vorname">
 
-                <label for="nachname">Nachname:</label>
-                <input type="text" id="nachname" name="nachname" placeholder="Nachname"><br><br>
+                    <label for="nachname">Nachname:</label>
+                    <input type="text" id="nachname" name="nachname" placeholder="Nachname"><br><br>
 
-                <label for="postleizahl">Postleizahl:</label>
-                <input type="number" id="postleizahl" name="postleizahl" placeholder="Postleizahl">
+                    <label for="postleizahl">Postleizahl:</label>
+                    <input type="number" id="postleizahl" name="postleizahl" placeholder="Postleizahl">
 
-                <label for="ort">Ort:</label>
-                <input type="text" id="ort" name="ort" placeholder="Ort"><br><br>
+                    <label for="ort">Ort:</label>
+                    <input type="text" id="ort" name="ort" placeholder="Ort"><br><br>
 
-                <label for="adresse">Adresse:</label>
-                <input type="text" id="adresse" name="adresse" placeholder="Adresse">
+                    <label for="adresse">Adresse:</label>
+                    <input type="text" id="adresse" name="adresse" placeholder="Adresse">
 
-                <label for="hausnummer">Hausnummer:</label>
-                <input type="number" id="hausnummer" name="hausnummer" placeholder="Hausnummer"><br><br>
+                    <label for="hausnummer">Hausnummer:</label>
+                    <input type="number" id="hausnummer" name="hausnummer" placeholder="Hausnummer"><br><br>
 
-                <label for="kleidungsart">Kleidungsart:</label>
-                <select name="kleidungsart" id="kleidungsart">
-                    <option value="mütze">Mütze</option>
-                    <option value="schal">Schal</option>
-                    <option value="oberteil">Oberteil</option>
-                    <option value="handschuhe">Handschuhe</option>
-                    <option value="hose">Hose</option>
-                    <option value="socke">Socke</option>
-                    <option value="schuhe">Schuhe</option>
-                </select><br><br>
+                    <label for="kleidungsart">Kleidungsart:</label>
+                    <select name="kleidungsart" id="kleidungsart">
+                        <option value="mütze">Mütze</option>
+                        <option value="schal">Schal</option>
+                        <option value="oberteil">Oberteil</option>
+                        <option value="handschuhe">Handschuhe</option>
+                        <option value="hose">Hose</option>
+                        <option value="socke">Socke</option>
+                        <option value="schuhe">Schuhe</option>
+                    </select><br><br>
 
-                <label for="kriesengebiete">Kriesengebiete:</label>
-                <select name="kriesengebiete" id="kriesengebiete">
-                    <option value="berlin">Berlin</option>
-                    <option value="nepal">Nepal</option>
-                    <option value="hawaii">Hawaii</option>
-                    <option value="duabi">Dubai</option>
-                    <option value="prag">Prag</option>
-                    <option value="türkei">Türkei</option>
-                </select><br><br>
+                    <label for="kriesengebiete">Kriesengebiete:</label>
+                    <select name="kriesengebiete" id="kriesengebiete">
+                        <option value="berlin">Berlin</option>
+                        <option value="nepal">Nepal</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="duabi">Dubai</option>
+                        <option value="prag">Prag</option>
+                        <option value="türkei">Türkei</option>
+                    </select><br><br>
 
-                <input type="submit"></label>
-             </form>
-               
+                    <input type="submit"></label>
+                </form>
+            </div>  
         </main>
 
-        <footer>
+        <footer class="Footer">
             <nav>
                 <ul>
                     <a href="privacy.html">Datenschutz</a>

@@ -1,0 +1,24 @@
+.Global-header {
+    border: 5px solid;
+    border-color: blue;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.Willkommen-Content{
+    text-align: center;
+    border: 5px solid;
+    border-color: red;  
+}
+
+.Spenden-Formular {
+    border: 5px solid;
+    border-color: red;  
+}
+.Footer {
+    border: 5px solid;
+    border-color: purple;
+}
