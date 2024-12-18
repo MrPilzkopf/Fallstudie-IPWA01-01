@@ -10,4 +10,4 @@ Flex-grow: https://stackoverflow.com/questions/1032914/how-to-make-a-div-fill-a-
 
 Header/Footer unterstreichung entfernt: https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks
 
-
+Hand Icon: https://www.veryicon.com/icons/miscellaneous/commonly-used-2/hand-22.html

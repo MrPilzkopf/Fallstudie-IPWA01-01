@@ -24,7 +24,7 @@
     margin: 0;
 }
 
-a {
+.Nav-Links a {
     color: #FFC300;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 25px;
@@ -72,6 +72,8 @@ body {
 .Perso-Infos {
     border: 5px solid;
     border-color: rgb(248, 158, 242);  
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .Kleider-Auswahl {
@@ -92,6 +94,12 @@ body {
     align-items: center;
     flex-direction: row;
     gap: 10px;
+}
+.Oberkörper {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    gap: 10px; 
 }
 
 
@@ -129,12 +137,34 @@ body {
     border: solid black;
     border-radius: 10px;
 }
-.Körper-Box {
+.Hand-L-Box {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-image: url('Hand-L.png');
+    background-size: cover;
+    background-position: center;
+    border: solid black;
+    border-radius: 10px;
+}
+.Torso-Box {
     display: inline-block;
     height: 150px;
     width: 150px;
     position: relative;
     background-image: url('Shirt.png');
+    background-size: cover;
+    background-position: center;
+    border: solid black;
+    border-radius: 10px;
+}
+.Hand-R-Box {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    background-image: url('Hand-R.png');
     background-size: cover;
     background-position: center;
     border: solid black;
@@ -173,62 +203,36 @@ body {
     border: solid black;
     border-radius: 10px;
 }
-  
+
 /* On mouse-over, add a grey background color */
-.Kopf:hover input ~ .Kopf-Box {
-    background-color: #4d6595;
-}
-.Kopf:hover input ~ .Körper-Box {
-    background-color: #4d6595;
-}
-.Kopf:hover input ~ .Hose-Box {
-    background-color: #4d6595;
-}
-.Kopf:hover input ~ .Schuh-R-Box {
-    background-color: #4d6595;
-}
+.Kopf:hover input ~ .Kopf-Box,
+.Kopf:hover input ~ .Hand-L-Box,
+.Kopf:hover input ~ .Torso-Box,
+.Kopf:hover input ~ .Hand-R-Box,
+.Kopf:hover input ~ .Hose-Box,
+.Kopf:hover input ~ .Schuh-R-Box,
 .Kopf:hover input ~ .Schuh-L-Box {
     background-color: #4d6595;
 }
   
 /* When the checkbox is checked, add a blue background */
-.Kopf input:checked ~ .Kopf-Box {
-    background-color: #374b75;
-}
-.Kopf input:checked ~ .Körper-Box {
-    background-color: #374b75;
-}
-.Kopf input:checked ~ .Hose-Box {
-    background-color: #374b75;
-}
-.Kopf input:checked ~ .Schuh-R-Box {
-    background-color: #374b75;
-}
+.Kopf input:checked ~ .Kopf-Box,
+.Kopf input:checked ~ .Hand-L-Box,
+.Kopf input:checked ~ .Torso-Box,
+.Kopf input:checked ~ .Hand-R-Box,
+.Kopf input:checked ~ .Hose-Box,
+.Kopf input:checked ~ .Schuh-R-Box,
 .Kopf input:checked ~ .Schuh-L-Box {
     background-color: #374b75;
 }
   
 /* Create the Kopf-Box/indicator (hidden when not checked) */
-.Kopf-Box:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-.Körper-Box:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-.Hose-Box:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-.Schuh-R-Box:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
+.Kopf-Box:after,
+.Hand-L-Box:after,
+.Torso-Box:after,
+.Hand-R-Box:after,
+.Hose-Box:after,
+.Schuh-R-Box:after,
 .Schuh-L-Box:after {
     content: "";
     position: absolute;
@@ -236,68 +240,24 @@ body {
 }
 
 /* Show the Kopf-Box when checked */
-.Kopf input:checked ~ .Kopf-Box:after {
+.Kopf input:checked ~ .Kopf-Box:after,
+.Kopf input:checked ~ .Hand-L-Box:after,
+.Kopf input:checked ~ .Torso-Box:after,
+.Kopf input:checked ~ .Hand-R-Box:after,
+.Kopf input:checked ~ .Hose-Box:after,
+.Kopf input:checked ~ .Schuh-R-Box:after,
+.Kopf input:checked ~ .Schuh-L-Box:after{
     display: block;
 }
-.Kopf input:checked ~ .Körper-Box:after {
-    display: block;
-}
-.Kopf input:checked ~ .Hose-Box:after {
-    display: block;
-}
-.Kopf input:checked ~ .Schuh-R-Box:after {
-    display: block;
-}
-.Kopf input:checked ~ .Schuh-L-Box:after {
-    display: block;
-}
-  
+
 /* Style the Kopf-Box/indicator */
-.Kopf .Kopf-Box:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.Kopf .Körper-Box:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.Kopf .Hose-Box:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.Kopf .Schuh-R-Box:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-.Kopf .Schuh-L-Box:after {
+.Kopf .Kopf-Box:after,
+.Kopf .Hand-R-Box:after,
+.Kopf .Torso-Box:after,
+.Kopf .Hand-L-Box:after,
+.Kopf .Hose-Box:after,
+.Kopf .Schuh-R-Box:after,
+.Kopf .Schuh-L-Box:after  {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -309,9 +269,21 @@ body {
     transform: rotate(45deg);
 }
 
+
 .Footer {
     border: 5px solid;
     border-color: purple;
     background-color: #3D3B8E;
-    padding: 10px
+}
+
+.Footer a {
+    color: #FFC300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.Footer :hover { /* Noch Buggy, unterstreicht beides */
+    color: #ffe600;
+    text-decoration: underline;
 }

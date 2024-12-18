@@ -26,14 +26,15 @@
 
         <main>
             <div class="Spenden-Content">
-                <p>Danke das du Spenden möchtest.</p>
-                <p>Fülle bitte die das untere Formular aus.</p>
-                <p> </p>
-                <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
-                    ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
+
                 <form>
                     <div class="Spenden-Formular">
                         <div class="Perso-Infos">
+                            <p>Danke das du Spenden möchtest.</p>
+                            <p>Fülle bitte die das untere Formular aus.</p>
+                            <p> </p>
+                            <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
+                                ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
                             <select name="spendeformular" id="spendeformular">
                                 <option value="geschäftsstelle">Geschäftsstelle</option>
                                 <option value="sammelfahrzeug">Sammelfahrzeug</option>
@@ -89,10 +90,20 @@
                                 <input type="checkbox">
                                 <span class="Kopf-Box"></span>
                             </label>
-                            <label class="Kopf">
-                                <input type="checkbox">
-                                <span class="Körper-Box"></span>
-                            </label>
+                            <div class="Oberkörper">
+                                <label class="Kopf">
+                                    <input type="checkbox">
+                                    <span class="Hand-L-Box"></span>
+                                </label>
+                                <label class="Kopf">
+                                    <input type="checkbox">
+                                    <span class="Torso-Box"></span>
+                                </label>
+                                <label class="Kopf">
+                                    <input type="checkbox">
+                                    <span class="Hand-R-Box"></span>
+                                </label>
+                            </div>
                             <label class="Kopf">
                                 <input type="checkbox">
                                 <span class="Hose-Box"></span>
