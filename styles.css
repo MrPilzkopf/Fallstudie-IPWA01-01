@@ -55,6 +55,16 @@ body {
     text-align: center;
     border: 5px solid;
     border-color: red;  
+
+}
+.Willkommen-Hintergrund {
+    height: 100%;
+    width: 100%;
+    background-image: url("Kinder.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
 }
 
 .Spenden-Content {
@@ -102,8 +112,6 @@ body {
     gap: 10px; 
 }
 
-
-
 .Kopf {
     position: center;
     justify-content: center;
@@ -124,7 +132,7 @@ body {
     height: 0;
     width: 0;
 }
-  
+
 /* Create a custom checkbox */
 .Kopf-Box {
     display: inline-block;
