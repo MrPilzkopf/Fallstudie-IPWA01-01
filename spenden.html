@@ -15,7 +15,7 @@
         <header>
             <nav>
                 <div class="Global-header">
-                    <img src="Kleido_Logo.png" alt="Logo" class="logo">
+                    <a href="homepage.html"><img src="Kleido_Logo.png" alt="Logo" class="logo"></a>
                     <ul class="Nav-Links">
                         <a href="homepage.html">Homepage</a>
                         <a href="spenden.html">Spenden</a>
@@ -37,31 +37,31 @@
                             <p> </p>
                             <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
                                 ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
-                            <select name="spendeformular" id="spendeformular">
-                                <option value="geschäftsstelle">Geschäftsstelle</option>
-                                <option value="sammelfahrzeug">Sammelfahrzeug</option>
+                            <select name="spendeformular" id="spendeformular" class="lable">
+                                <option value="geschäftsstelle" class="lable">Geschäftsstelle</option>
+                                <option value="sammelfahrzeug" class="lable">Sammelfahrzeug</option>
                             </select>
                             <br><br>
         
-                            <label for="vorname">Vorname:</label>
+                            <label for="vorname" class="lable">Vorname:</label>
                             <input type="text" id="vorname" name="vorname" placeholder="Vorname">
         
-                            <label for="nachname">Nachname:</label>
+                            <label for="nachname" class="lable">Nachname:</label>
                             <input type="text" id="nachname" name="nachname" placeholder="Nachname"><br><br>
         
-                            <label for="postleizahl">Postleizahl:</label>
+                            <label for="postleizahl" class="lable">Postleizahl:</label>
                             <input type="number" id="postleizahl" name="postleizahl" placeholder="Postleizahl">
         
-                            <label for="ort">Ort:</label>
+                            <label for="ort" class="lable">Ort:</label>
                             <input type="text" id="ort" name="ort" placeholder="Ort"><br><br>
         
-                            <label for="adresse">Adresse:</label>
+                            <label for="adresse" class="lable">Adresse:</label>
                             <input type="text" id="adresse" name="adresse" placeholder="Adresse">
         
-                            <label for="hausnummer">Hausnummer:</label>
+                            <label for="hausnummer" class="lable">Hausnummer:</label>
                             <input type="number" id="hausnummer" name="hausnummer" placeholder="Hausnummer"><br><br>
         
-                            <label for="kleidungsart">Kleidungsart:</label>
+                            <label for="kleidungsart" class="lable">Kleidungsart:</label>
                             <select name="kleidungsart" id="kleidungsart">
                                 <option value="mütze">Mütze</option>
                                 <option value="schal">Schal</option>
@@ -72,21 +72,21 @@
                                 <option value="schuhe">Schuhe</option>
                             </select><br><br>
         
-                            <label for="kriesengebiete">Kriesengebiete:</label>
-                            <select name="kriesengebiete" id="kriesengebiete">
-                                <option value="berlin">Berlin</option>
-                                <option value="nepal">Nepal</option>
-                                <option value="hawaii">Hawaii</option>
-                                <option value="duabi">Dubai</option>
-                                <option value="prag">Prag</option>
-                                <option value="türkei">Türkei</option>
+                            <label for="kriesengebiete" class="lable">Kriesengebiete:</label>
+                            <select name="kriesengebiete" id="kriesengebiete" class="lable">
+                                <option value="berlin" class="lable">Berlin</option>
+                                <option value="nepal" class="lable">Nepal</option>
+                                <option value="hawaii" class="lable">Hawaii</option>
+                                <option value="duabi" class="lable">Dubai</option>
+                                <option value="prag" class="lable">Prag</option>
+                                <option value="türkei" class="lable">Türkei</option>
                             </select><br><br>
         
                             <input type="submit"></label>
                         </div>
 
                         <div class="Kleider-Auswahl">
-                            <label for="kleidungsart">Kleidungsart:</label>
+                            <label for="kleidungsart" class="lable">Kleidungsart:</label>
 
                             <label class="Kopf">
                                 <input type="checkbox">
@@ -129,7 +129,7 @@
 
         <footer class="Footer">
             <nav>
-                <ul class="Footer-Link">
+                <ul>
                     <a href="privacy.html">Datenschutz</a>
                     <a href="imprint.html">Impressum</a>
                 </ul>
