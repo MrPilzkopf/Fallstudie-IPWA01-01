@@ -123,13 +123,28 @@ p{
 
 .Kriesengebiet {
     display: flex;
-    height: 250px;
-    width: 500px;
-    justify-content: center;
+    height: 200px;
+    width: 300px;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
     border: 5px solid;
     border-color: rgb(0, 0, 255);
     border-radius: 25px;
     background-color: #3D3B8E;
+    /* Weniger Abstand oben und zwischen Heading */
+}
+
+.Kriesengebiet p{
+    word-wrap: normal;
+    font-size: 16px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.Kriesenbild {
+    width: 35%;
+    height: 35%;
 }
 
 .Mehr-Kriesengebiete {
