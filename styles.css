@@ -7,7 +7,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: #3D3B8E;
+    background-color: #001D3D;
     padding-left: 20px;
     z-index: 100;
 }
@@ -110,8 +110,8 @@ h3{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding-left: 10%;
+    padding-right: 10%;
     border: 5px solid;
     border-color: rgb(248, 158, 242);  
 }
@@ -143,9 +143,7 @@ h3{
     background-color: #3D3B8E;
     /* Weniger Abstand oben und zwischen Heading */
     height: fit-content;
-    display: flex;
     padding-bottom: 10px;
-
 }
 
 .Kriesengebiet p{
@@ -181,20 +179,111 @@ h3{
     cursor: pointer;
 }
 
+.Wir {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    height: fit-content;
+    gap: 50px;
+}
 
-.Funktionieren {
-    background-color: #3D3B8E;
-    height: 1000px;
+.Wir-Block {
+    background-color: #001D3D;
     border: 5px solid;
-    border-color: rgb(165, 10, 155);  
+    border-color: rgb(165, 10, 155); 
+    border-radius: 10px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.Wir-Block h2{
+    color: #FFC300;;
+}
+
+.Wir-Block p {
+    color: white; 
+}
+
+.Wir-Überschrift {
+    height: 40px;
 }
 
 
 
 
+---------------------------------------------------------
+{box-sizing: border-box;}
+
+/* Button used to open the contact form*/
+.Daten-Bestatigen-Knopf {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.Daten-Bestatigen-Box {
+  display: none;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.Daten-Formular {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+.Daten-Formular input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.Daten-Formular input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.Daten-Formular .Bestatigen {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.Daten-Formular .Schliesen-Knopf {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.Daten-Formular .Bestatigen:hover, .Daten-Bestatigen-Knopf:hover {
+  opacity: 1;
+}
+-----------------------------------------------------------
 
 
 
+
+
+
+
+/* Spenden Content */
 .Spenden-Content {
     border: 5px solid;
     border-color: rgb(25, 0, 255);
@@ -214,6 +303,12 @@ h3{
     padding-right: 10px;
 }
 
+.Kleider-Auswahl-Anzahl{
+    border: 5px solid;
+    border-color: #2f3c06;
+    display: flex;
+    flex-direction: row;
+}
 .Kleider-Auswahl {
     border: 5px solid;
     flex-grow: 1;
@@ -222,22 +317,59 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.Kleider-Anzahl {
+    border: 5px solid;
+    border-color: rgb(191, 255, 0); 
     gap: 10px;
-    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Kleider-Anzahl input {
+    width: 50px;
+    height: 25px;
+    font-size: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-.Füße {
+.Kopf-Zahl{
+    height: 79px;
+    width: 100px; 
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    gap: 10px;
-}
-.Oberkörper {
-    display: flex;
     align-items: end;
-    flex-direction: row;
-    gap: 10px; 
+}
+.Oberkörper-Zahl {
+    height: 89px;
+    width: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.Hände-Zahl {
+    height: 54px;
+    width: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.Hose-Zahl{
+    height: 154px;
+    width: 10px; 
+    display: flex;
+    justify-content: center;  
+    align-items: end;
+}
+.Schuhe-Zahl{
+    height: 71px;
+    width: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
 .Kopf {
@@ -250,6 +382,28 @@ h3{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.Körper {
+    border: 5px solid;
+    border-color: rgb(248, 158, 242);  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.Oberkörper {
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    gap: 10px; 
+}
+.Schuhe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
 }
   
 /* Hide the browser's default checkbox */
@@ -270,7 +424,7 @@ h3{
     background-image: url('Kopf.png');
     background-size: cover;
     background-position: center;
-    border: solid black;
+    border: 2px solid black;
     border-radius: 10px;
 }
 .Hand-L-Box {
@@ -405,9 +559,9 @@ h3{
     transform: rotate(45deg);
 }
 
-
+/* Footer */
 .Footer {
-    background-color: #3D3B8E;
+    background-color: #001D3D;
     width: 100%;
     left: 0;
     bottom: 0;
