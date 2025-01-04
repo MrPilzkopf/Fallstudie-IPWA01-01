@@ -29,7 +29,7 @@
         <main>
             <div class="Spenden-Content">
 
-                <form>
+                <form id="spendeformular">
                     <div class="Spenden-Formular">
                         <div class="Perso-Infos">
                             <p>Danke das du Spenden möchtest.</p>
@@ -37,12 +37,12 @@
                             <p> </p>
                             <p>Bitte wählen Sie aus wie Sie Spenden möchten, 
                                 ob vor Ort an der Geschäftsstelle oder per Abholung von einem Sammelfahrzeug:</p>
-                            <select name="spendeformular" id="spendeformular" class="lable" onchange="spendenArtFunction()">
+                            <select name="spendeart" class="lable" onchange="spendenArtFunction()">
                                 <option value="geschäftsstelle" class="lable" id="geschäftsstelleId" >Geschäftsstelle</option>
                                 <option value="sammelfahrzeug" class="lable"id="sammelfahrzeugId" >Sammelfahrzeug</option>
                             </select>
                             <br><br>
-                            <div id="sammelfahrzeugInfos" style="display:none">
+                            <div id="sammelfahrzeugInfos" style="display:block"> <!-- Muss auf none gesetzt werden, aber fürs testen leichter-->
                                 <label for="vorname" class="lable">Vorname:</label>
                                 <input type="text" id="vorname" name="vorname" placeholder="Vorname">
             
@@ -82,16 +82,18 @@
                                 <option value="türkei" class="lable">Türkei</option>
                             </select><br><br>
         
-                            <button class="Daten-Bestatigen-Knopf" onclick="datenBestatigenKnopf()">Daten Bestätigen</button>
-                            <div class="Daten-Bestatigen-Box" id="Daten-Bestatigen-Formular">
+                            <button type="button" class="Daten-Bestatigen-Knopf" onclick="datenBestatigenKnopf()">Daten Bestätigen</button>
+                            <input type="button" onclick="spendeformularLeeren()" value="Daten Zurücksetzen">
+                            <div class="Daten-Bestatigen-Box" id="datenBestatigenFormular">
                                 <form class="Daten-Formular">
                                   <h1>Heading</h1>
-                                  <p>P</p>
+                                  <output id="formularDaten"></output>
+                                  
                             
                                   <button type="submit" class="Bestatigen">Daten Bestätigen</button>
-                                  <button type="button" class="Schliesen-Knopf" onclick="schliesenKnopf()"></button>
+                                  <button type="button" class="Daten-Schliesen-Knopf" onclick="schliesenKnopf()">Schließen</button>
                                 </form>
-                              </div>
+                            </div>
                               
                         </div>
 

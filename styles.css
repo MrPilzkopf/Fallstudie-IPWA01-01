@@ -1,3 +1,9 @@
+/* CSS To-Do
+-   Willkommen Text muss beim zoomen in Kasten bleiben
+.   
+
+*/
+
 .Global-header {
     display: flex;
     position: fixed;
@@ -51,7 +57,7 @@ body {
     margin: 0;
     padding: 0;
     width: fill;
-    height: 943px;  /* Höhe meines Bildschirms, abzüglich Suchleiste und Windowsbar */
+    height: auto;
     background-color: rgb(104, 131, 186);
 }
 
@@ -81,7 +87,7 @@ h3{
 }
 
 .Willkommen-Nachricht{
-    background-color: rgba(104, 131, 186, 0.6);
+    background-color: rgba(104, 131, 186, 0.8);
     position: absolute;
     top: 35%;
     left: 50%;
@@ -89,8 +95,10 @@ h3{
     z-index: 2;
     width: 60%;
     padding: 20px;
+    padding-bottom: 40px;
     text-align: center;
-    border-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
     color: rgb(255,195,0);
     font-size: 20px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -104,6 +112,27 @@ h3{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Spenden {
+    height: fit-content;
+    padding: 10px;
+    width: fit-content;
+    border: solid black;
+    background-color: #FFC300;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.Spenden:hover {
+    height: fit-content;
+    width: fit-content;
+    background-color: #ffd857;
+    cursor: pointer;
 }
 
 .Informations-Content {
@@ -151,8 +180,9 @@ h3{
 }
 
 .Kriesenbild {
-    width: 35%;
-    height: 35%;
+    max-width: 100%;
+    height: auto;
+
 }
 
 .Mehr-Kriesengebiete {
@@ -188,6 +218,7 @@ h3{
 }
 
 .Wir-Block {
+    width: 33%;
     background-color: #001D3D;
     border: 5px solid;
     border-color: rgb(165, 10, 155); 
@@ -559,10 +590,13 @@ h3{
     transform: rotate(45deg);
 }
 
+
+
 /* Footer */
 .Footer {
     background-color: #001D3D;
     width: 100%;
+    height: 50px;
     left: 0;
     bottom: 0;
 }

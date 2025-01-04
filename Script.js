@@ -1,13 +1,16 @@
 /*JS To-Do:
 -       Auswahl Geschäftsstelle / Abholung
 -       Kleiderauswahl Anzahl verbergen solange nicht ausgewählt
--   Bestätigungs Popup, nicht direkt wieder schliesen
+-       Bestätigungs Popup, nicht direkt wieder schliesen (type="button" vergessen)
 -   Funtkionen Komprimieren
 -       Rechte Hand & Schuh funktionieren nicht
 -       Zahlen eingaben werden zwar anezeigt, aber nicht an richtigen Pos
 -       Wenn Schuhe oder Hände Ausgewählt, wieder entfernen möglich machen
 -   Rechten Schuh & Hand lassen sich nicht benutzen, da sosnt oberes Problem auftritt
+-   Daten Übergeben von FOrmular zu Popup
+-   Popup Vollbild und BG blur
 */
+
 
 function spendenArtFunction() {
   var sammelfahrzeugId = document.getElementById("sammelfahrzeugId");
@@ -20,13 +23,24 @@ function spendenArtFunction() {
 }
 
 function datenBestatigenKnopf() {
-document.getElementById("Daten-Bestatigen-Formular").style.display = "block";
+  document.getElementById("datenBestatigenFormular").style.display = "block";
 }
+
 
 function schliesenKnopf() {
-  document.getElementById("Daten-Bestatigen-Formular").style.display = "none";
+  document.getElementById("datenBestatigenFormular").style.display = "none";
 }
 
+function datenUbergabe() {
+  var vorname = document.getElementById("vorname").value;
+  document.getElementById("formularDaten").value = vorname;
+}
+
+
+function spendeformularLeeren() {
+  document.getElementById("spendeformular").reset();
+  sammelfahrzeugInfos.style.display = "none"; // Damit auch der Block wieder versteckt wird
+}
 
 function kopfFunction() {
   // Get the checkbox
@@ -79,7 +93,6 @@ function beideSchuhe() {
 
 function torsoFunction() {
   var torsoKnopf = document.getElementById("torsoKnopf");
-
   var torsoZahl = document.getElementById("torsoZahl");
 
   if (torsoKnopf.checked == true){
